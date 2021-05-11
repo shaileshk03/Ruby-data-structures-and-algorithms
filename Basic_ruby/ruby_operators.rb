@@ -1,5 +1,4 @@
 class Operators
-
 # This Operators class has covered with all the operators used in ruby
 
 # * Addition *
@@ -57,6 +56,7 @@ puts (2  <=  5)
 # Greater Than Equal To(>=) operator checks whether the first operand is greater than or equal to the second operand
 puts "Greater than Equal To Operator"
 puts (2  >=  5)
+
 
 # Combined combination (<=>) operator return 0 when first operand equal to second, 
 # return 1 when first operand is greater than second operand, 
@@ -158,17 +158,62 @@ end
 
 
 # * Assignment Operators *
-
+puts ("assignment operator in Ruby")
+x = 40 
+puts ("abbreviated assignment add")
+puts x += 20  # Add AND
+puts ("abbreviated assignment subtract")
+puts x -= 20  # Subtract AND
+puts ("abbreviated assignment multiply")
+puts x *= 4  # Multiply AND
+puts ("abbreviated assignment divide")
+puts x /= 4  # Divide AND
+puts ("abbreviated assignment modulus") 
+puts x %= 6  # Modulus AND
+puts ("abbreviated assignment exponent")
+puts x **= 4 # Exponent AND
 
 # * Bitwise Operators *
 
+puts ("bitwise operators in Ruby")
+a = 58      #  00111010
+b = 34      #  00100010
+puts ("Binary AND Operator")
+puts (a&b)  # And
+puts ("Binary OR Operator")
+puts (a|b)  # And
+puts ("Binary OR Operator")
+puts (a^b)  # Xor
+puts ("Binary Ones Complement Operator")
+puts (~a)   # Not
+puts ("Binary Left Shift Operator")
+puts (a<<4) # Shift left
+puts ("Binary Right Shift Operator")
+puts (a>>4) # Shift right
+
 
 # * Ternary Operator * 
+# It is a conditional operator which is a shorthand version of the if-else statement. 
+# It has three operands and hence the name ternary. 
+# It will return one of two values depending on the value of a Boolean expression
+# Syntax : condition ? first_expression : second_expression;
+
+marks_obtained = 90
+# using ternary operator
+result = marks_obtained > 40 ? 'Pass' : 'Fail'
+puts result
 
 
 # * defined? Operator *
+# defined operator check if the pass expression is defined or not 
+# Syntax : defined? expression_to_be_checked 
+
+var = 1
+# it returns constant
+puts defined? var 
+# it returns expression
+puts defined? a 
 
 
 # Dot “.” and Double Colon “::” Operators
-
 end 
