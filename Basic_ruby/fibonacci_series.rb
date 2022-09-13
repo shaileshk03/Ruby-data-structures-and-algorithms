@@ -3,10 +3,7 @@ class Fibonacci_series
   # e.g. the fibonacci series up to 10 is: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
   # there are two methods recursive and non-recursive approach
 
-  #
-  
-
-  
+  #  
   # recursive funtion using Proc
   def self.compute(index)
     f = fibonacci
